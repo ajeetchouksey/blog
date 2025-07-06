@@ -17,7 +17,7 @@ production: true
 disqus_shortname: azure365   # get one: https://disqus.com/admin/signup/
 #duoshuo_shortname: xxx  # get one: http://duoshuo.com/create-site/
 
-permalink: /:categories/:title
+permalink: /:year/:month/:day/:title/
 markdown: kramdown
 gems:
  - jekyll-paginate
