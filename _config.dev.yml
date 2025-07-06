@@ -1,5 +1,5 @@
 # Site settings
-title: Cloud and DevOps
+title: AI-Driven Cloud & DevOps
 url: "http://127.0.0.1:4000"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
 baseurl: "" # the prefix of your site uri, eg. `/jekyll-theme-EasyBook` or just one slash `/`
 #timezone: Asia/Chongqing
