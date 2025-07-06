@@ -12,15 +12,13 @@ google_analytics:  UA-101864870-1
 google_verify: GKeGILLEWvsJwRfdYMqqoMDZKOBZPWIWpHP9K2uIXHI
 production: true
 
-# Use GitHub Primer theme to match Copilot look
+# Use GitHub Primer theme gem
 theme: jekyll-theme-primer
-remote_theme: primer/jekyll-theme-primer
 # Plugins used by the site
 plugins:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-redirect-from
-  - jekyll-remote-theme
 
 # Comment Service (Disqus or 多说)
 #  choose one and un-comment the line to active it
