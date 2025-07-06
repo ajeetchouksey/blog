@@ -1,7 +1,7 @@
 # Site settings
 title: Cloud Tech
-url: "https://ajeetchouksey.github.io/blog/"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
-baseurl: "" # the prefix of your site uri, eg. `/jekyll-theme-EasyBook` or just one slash `/`
+url: "https://ajeetchouksey.github.io"
+baseurl: "/blog" # the prefix of your site uri, eg. `/blog`
 timezone: Europe/London
 description: ""
 
