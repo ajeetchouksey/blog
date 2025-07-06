@@ -75,8 +75,8 @@ body {
 }
 
 a {
-  color: var(--color-link);
-  &:hover { color: darken(var(--color-link), 10%); }
+  color: $color-link;
+  &:hover { color: $color-link-hover; }
 }
 
 .btn-primary {
