@@ -47,3 +47,44 @@ $header-fg: #00B7C3;
         "syntax-highlighting",
         "easybook"
 ;
+/* Copilot-inspired color scheme */
+$color-brand:        #10A37F; // Copilot green
+$color-link:         #2188FF; // Hyperlink blue
+$color-background:   #F6F8FA; // Light canvas
+$color-text:         #24292E; // Soft slate
+$color-muted:        #586069; // Muted gray
+$color-dark-bg:      #0D1117; // Dark console
+
+/* CSS custom properties */
+:root {
+  --color-background: #{$color-background};
+  --color-text: #{$color-text};
+  --color-link: #{$color-link};
+  --color-muted: #{$color-muted};
+  --color-brand: #{$color-brand};
+}
+[data-color-mode="dark"] {
+  --color-background: #{$color-dark-bg};
+  --color-text: #{$color-text};
+  --color-link: #58A6FF;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+a {
+  color: var(--color-link);
+  &:hover { color: darken(var(--color-link), 10%); }
+}
+
+.btn-primary {
+  background-color: var(--color-brand);
+  color: #fff;
+}
+
+pre {
+  background: var(--color-dark-bg);
+  color: var(--color-text);
+}
