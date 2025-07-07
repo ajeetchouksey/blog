@@ -2,7 +2,9 @@
 <html prefix="og: http://ogp.me/ns#">
   {% include head.html %}
   <body>
-    {% include header.html %}
+    {% if page.url != "/" %}
+      {% include header.html %}
+    {% endif %}
     <div class="page-content">
       <div class="wrapper">
         <div class="col-main">
