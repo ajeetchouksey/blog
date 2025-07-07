@@ -97,7 +97,7 @@ header.header .site-nav a:hover {
 
 // Header Banner styling
 .header .header-banner {
-  height: 12rem;
+  height: 8rem;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -121,7 +121,7 @@ header.header .site-nav a:hover {
 
 // Generic banner fallback
 .header .header-banner.generic-banner {
-  height: 12rem;
+  height: 8rem;
   background: linear-gradient(135deg, var(--color-brand) 0%, var(--color-dark-bg) 100%);
   display: flex;
   align-items: center;
@@ -187,4 +187,8 @@ pre {
 /* Ensure navigation wrapper uses dark background */
 header.header > .wrapper {
   background-color: var(--color-dark-bg);
+}
+/* Landing page nav transparent over hero */
+.home header.header > .wrapper {
+  background: transparent;
 }
