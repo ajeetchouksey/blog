@@ -82,21 +82,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Header and Navigation
-header {
+header.header {
   background-color: var(--color-brand);
   padding: 1rem 0;
 }
-header .site-title, header .site-title a {
+header.header .site-title, header.header .site-title a {
   color: #fff;
   font-family: $code-font-family;
 }
-header .site-nav a {
+header.header .site-nav a {
   color: #fff;
   margin-left: 1rem;
   font-family: $code-font-family;
 }
-header .site-nav a:hover {
+header.header .site-nav a:hover {
   color: var(--color-link-hover);
+}
+
+// Remove default background from post headers
+.post-header {
+  background-color: transparent;
+  padding: 0;
 }
 
 // Footer styling
