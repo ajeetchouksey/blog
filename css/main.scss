@@ -223,3 +223,19 @@ header.header > .wrapper {
 .post-header .site-title {
   color: var(--color-text);
 }
+
+/* Unified header bar styling for all pages */
+.header {
+  background-color: var(--color-background) !important;
+  border-bottom: 1px solid var(--color-muted);
+}
+.header > .wrapper {
+  padding: 0.5rem 1rem;
+}
+.header .header-banner {
+  display: none;
+}
+.header .site-title,
+.header .site-nav a {
+  color: var(--color-text) !important;
+}
