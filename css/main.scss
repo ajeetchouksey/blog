@@ -43,13 +43,13 @@ $header-fg: #ffffff;
         "easybook",
         "home"
 ;
-/* Metallic black theme */
-$color-brand:        #1a1a1a; // Metallic dark grey
-$color-link:         #aaaaaa; // Silvery grey
-$color-background:   #121212; // Dark background
-$color-text:         #dddddd; // Light grey text
-$color-muted:        #666666; // Muted grey
-$color-dark-bg:      #0a0a0a; // Ultra dark background
+/* GitHub-inspired color theme */
+$color-brand:        #24292e; // GitHub dark
+$color-link:         #0969da; // GitHub link blue
+$color-background:   #ffffff; // GitHub light canvas
+$color-text:         #24292e; // GitHub text
+$color-muted:        #57606a; // GitHub muted gray
+$color-dark-bg:      #0d1117; // GitHub dark mode background
 
 /* CSS custom properties */
 :root {
@@ -97,7 +97,7 @@ header.header .site-nav a:hover {
 
 // Header Banner styling
 .header .header-banner {
-  height: 8rem;
+  height: 4rem;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -121,7 +121,7 @@ header.header .site-nav a:hover {
 
 // Generic banner fallback
 .header .header-banner.generic-banner {
-  height: 8rem;
+  height: 4rem;
   background: linear-gradient(135deg, var(--color-brand) 0%, var(--color-dark-bg) 100%);
   display: flex;
   align-items: center;
@@ -190,5 +190,5 @@ header.header > .wrapper {
 }
 /* Landing page nav transparent over hero */
 .home header.header > .wrapper {
-  background: transparent;
+  background-color: var(--color-dark-bg);
 }
