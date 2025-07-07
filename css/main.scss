@@ -40,7 +40,8 @@ $header-fg: #ffffff;
         "base",
         "layout",
         "syntax-highlighting",
-        "easybook"
+        "easybook",
+        "home"
 ;
 /* Metallic black theme */
 $color-brand:        #1a1a1a; // Metallic dark grey
@@ -121,7 +122,7 @@ header.header .site-nav a:hover {
 // Generic banner fallback
 .header .header-banner.generic-banner {
   height: 12rem;
-  background: linear-gradient(135deg, var(--color-brand) 0%, var(--color-muted) 100%);
+  background: linear-gradient(135deg, var(--color-brand) 0%, var(--color-dark-bg) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -170,4 +171,20 @@ pre {
   font-size: 0.75rem;
   padding: 0.25em 0;
   text-decoration: underline;
+}
+
+/* Content area styling */
+.page-content {
+  background-color: #ffffff;
+  color: #000000;
+}
+.page-content a {
+  color: #000000;
+}
+.post-content, .post-excerpt {
+  color: #000000;
+}
+/* Ensure navigation wrapper uses dark background */
+header.header > .wrapper {
+  background-color: var(--color-dark-bg);
 }
