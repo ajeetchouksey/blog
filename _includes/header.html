@@ -13,8 +13,10 @@
     </div>
   {% endunless %}
   <div class="wrapper">
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-    {% if site.description %}<p class="site-tagline">{{ site.description }}</p>{% endif %}
+    {% if page.url == '/' %}
+      <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+      {% if site.description %}<p class="site-tagline">{{ site.description }}</p>{% endif %}
+    {% endif %}
     <nav class="site-nav">
       <a class="page-link" href="{{ site.baseurl }}/">Home</a>
       <a class="page-link" href="{{ site.baseurl }}/tags/">Tags</a>
