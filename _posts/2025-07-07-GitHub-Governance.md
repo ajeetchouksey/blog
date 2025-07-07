@@ -13,7 +13,6 @@ As a DevOps engineer who’s implemented governance across numerous repositories
 <!--more-->
 ## 1. Branch Protection Rules
 
-![Branch Protection Rules Screenshot]({{ site.baseurl }}/images/others/branch-protection-rules.png)
 
 - **Enable on Critical Branches**: Protect `main` and release branches.
   - Available in both Enterprise and Free.
