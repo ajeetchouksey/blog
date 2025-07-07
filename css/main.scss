@@ -213,3 +213,13 @@ header.header > .wrapper {
 .home header.header > .wrapper {
   background-color: var(--color-dark-bg);
 }
+.post-header, .header.post-header > .wrapper {
+  background-color: var(--color-background);
+  border-bottom: 1px solid var(--color-muted);
+}
+.post-header .site-nav a {
+  color: var(--color-text);
+}
+.post-header .site-title {
+  color: var(--color-text);
+}
