@@ -14,7 +14,8 @@ layout: default
     <p class="post-meta">
      <!-- <br/>-->
     {% for tag in page.tags %}
-      <a class="tag" href="/tags/#{{ tag | slugify }}">{{ tag }}</a>
+      {% assign tag_path = "/tags/#" | append: tag | slugify %}
+      <a class="tag" href="{{ tag_path | prepend: site.baseurl }}">{{ tag }}</a>
     {% endfor %}
 
     </p>
