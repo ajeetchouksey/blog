@@ -13,6 +13,7 @@ author: Ajeet
 
 As a DevOps engineer who’s implemented governance across numerous repositories, I’ve learned that robust policies and automated controls are essential for security, compliance, and collaboration. In this guide, I’ll share proven best practices—leveraging both GitHub Enterprise and the Free tier—to enforce branch protection, define clear code ownership, and automate compliance checks. Whenever Enterprise-only features appear, I’ll provide practical workarounds for Free-tier environments.
 
+<!--more-->
 ## 1. Branch Protection Rules
 
 ![Branch Protection Rules Screenshot]({{ site.baseurl }}/images/others/branch-protection-rules.png)
