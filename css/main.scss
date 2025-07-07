@@ -74,6 +74,45 @@ body {
   color: var(--color-text);
 }
 
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  font-family: $code-font-family;
+  color: var(--color-text);
+}
+
+// Header and Navigation
+header {
+  background-color: var(--color-brand);
+  padding: 1rem 0;
+}
+header .site-title, header .site-title a {
+  color: #fff;
+  font-family: $code-font-family;
+}
+header .site-nav a {
+  color: #fff;
+  margin-left: 1rem;
+  font-family: $code-font-family;
+}
+header .site-nav a:hover {
+  color: var(--color-link-hover);
+}
+
+// Footer styling
+footer {
+  background-color: var(--color-muted);
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  font-family: $code-font-family;
+}
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  color: var(--color-link-hover);
+}
+
 a {
   color: $color-link;
   &:hover { color: $color-link-hover; }
