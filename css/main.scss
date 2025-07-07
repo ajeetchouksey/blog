@@ -95,6 +95,27 @@ header.header .site-nav a:hover {
   color: var(--color-link-hover);
 }
 
+/* Hide banner, use single bar header */
+.header .header-banner {
+  display: none;
+}
+
+/* Header wrapper bar styling */
+header.header > .wrapper {
+  background-color: var(--color-brand) !important;
+  padding: 0.5rem 1rem;
+}
+
+header.header .site-title,
+header.header .site-nav a {
+  color: #ffffff;
+}
+
+header.header .site-nav a {
+  margin-left: 1rem;
+  font-family: $code-font-family;
+}
+
 // Header Banner styling
 .header .header-banner {
   height: 4rem;
