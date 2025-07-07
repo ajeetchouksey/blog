@@ -21,7 +21,7 @@ jobs:
           gem install bundler
           bundle install
       - name: Build site
-        run: bundle exec jekyll build
+        run: bundle exec jekyll build --quiet
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
