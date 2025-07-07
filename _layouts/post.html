@@ -27,7 +27,9 @@ layout: default
      
      <!--<div class="addthis_inline_share_toolbox"></div>-->
      <div class="addthis_inline_share_toolbox"></div>
-    {{ content }}
+    {% comment %} Prefix image src paths with baseurl {% endcomment %}
+    {% assign img_prefix = 'src="' | append: site.baseurl | append: '/images' %}
+    {{ content | replace: 'src="/images', img_prefix }}
     <p></p>
      
     <!--<div class="addthis_inline_follow_toolbox"></div>-->
