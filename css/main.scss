@@ -1,5 +1,4 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
 
@@ -32,6 +31,9 @@ $header-bg-hover: darken(#003366, 10%); // Darkened for hover state
 $header-link: #ffffff;
 $header-fg: #00B7C3;
 
+---
+# Only the main Sass file needs front matter
+---
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
         @content;
@@ -97,6 +99,30 @@ header.header .site-nav a {
 }
 header.header .site-nav a:hover {
   color: var(--color-link-hover);
+}
+
+// Header Banner styling
+.header .header-banner {
+  height: 12rem;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.header .header-banner .banner-content {
+  text-align: center;
+}
+.header .header-banner .site-title {
+  font-size: 2rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+.header .header-banner .site-tagline {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  opacity: 0.8;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.6);
 }
 
 // Remove default background from post headers

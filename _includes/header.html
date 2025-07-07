@@ -1,6 +1,11 @@
 <header class="header">
+  <div class="header-banner" style="background-image: url('{{ site.baseurl }}/images/others/devopsprj.JPG');">
+    <div class="wrapper banner-content">
+      <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+      {% if site.description %}<p class="site-tagline">{{ site.description }}</p>{% endif %}
+    </div>
+  </div>
   <div class="wrapper">
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>	
     <nav class="site-nav">
       <a class="page-link" href="{{ site.baseurl }}/">Home</a>
       <a class="page-link" href="{{ site.baseurl }}/tags/">Tags</a>
