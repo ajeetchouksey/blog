@@ -108,6 +108,6 @@ As a DevOps engineer who’s implemented governance across numerous repositories
 
 ---
 **References:**
-- GitHub Enterprise Administration Guide
-- GitHub Branch Protection Rules Documentation
-- GitHub Advanced Security Best Practices
+- [GitHub Enterprise Administration Guide](https://docs.github.com/en/enterprise)
+- [GitHub Branch Protection Rules Documentation](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-protected-branches)
+- [GitHub Advanced Security Best Practices](https://docs.github.com/en/code-security/secure-coding/best-practices)
