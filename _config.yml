@@ -1,7 +1,7 @@
 # Site settings
 title: AI-Driven Cloud & DevOps
-url: "https://ajeetchouksey.github.io"
-baseurl: "/blog" # the prefix of your site uri, eg. `/blog`
+url: "https://theaiops.blog"
+baseurl: "" # cleared for custom domain root deployment
 timezone: Europe/London
 description: ""
 
