@@ -239,3 +239,14 @@ header.header > .wrapper {
 .header .site-nav a {
   color: var(--color-text) !important;
 }
+header.header, .header {
+  background-color: #24292e !important;
+  border-bottom: 1px solid #23272c;
+}
+header.header > .wrapper, .header > .wrapper {
+  padding: 0.5rem 1rem;
+}
+header.header .site-title, .header .site-title,
+header.header .site-nav a, .header .site-nav a {
+  color: #fff !important;
+}
