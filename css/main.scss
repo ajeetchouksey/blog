@@ -118,6 +118,16 @@ header.header .site-nav a:hover {
   text-shadow: 0 1px 2px rgba(0,0,0,0.6);
 }
 
+// Generic banner fallback
+.header .header-banner.generic-banner {
+  height: 12rem;
+  background: linear-gradient(135deg, var(--color-brand) 0%, var(--color-muted) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
 // Remove default background from post headers
 .post-header {
   background-color: transparent;

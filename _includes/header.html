@@ -1,10 +1,16 @@
 <header class="header">
-  <div class="header-banner" style="background-image: url('{{ site.baseurl }}/images/others/devopsprj.JPG');">
-    <div class="wrapper banner-content">
-      <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-      {% if site.description %}<p class="site-tagline">{{ site.description }}</p>{% endif %}
+  {% unless page.url == '/' %}
+    {% if page.header_image %}
+      <div class="header-banner" style="background-image: url('{{ site.baseurl }}/{{ page.header_image }}');">
+    {% else %}
+      <div class="header-banner generic-banner">
+    {% endif %}
+      <div class="wrapper banner-content">
+        <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+        {% if site.description %}<p class="site-tagline">{{ site.description }}</p>{% endif %}
+      </div>
     </div>
-  </div>
+  {% endunless %}
   <div class="wrapper">
     <nav class="site-nav">
       <a class="page-link" href="{{ site.baseurl }}/">Home</a>
