@@ -29,8 +29,8 @@ $color-link-hover: #004ba0;
 $header-bg: #003366;
 $header-bg-hover: darken(#003366, 10%); // Darkened for hover state
 $header-link: #ffffff;
-
-
+// Header foreground (title) color
+$header-fg: #ffffff;
 
 // Include mixins
 @import "mixins";
