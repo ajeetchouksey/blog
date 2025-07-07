@@ -47,13 +47,18 @@
     {% else %}
     <meta name="keywords" content="PowerShell, DSC, DevOps, Visual Studio, Visual Studio Team Services, VSTS, Application Lifecycle Management, Extensions, Extensibility, Azure"/> 
     {% endif %}
-    <link rel="stylesheet" href="{{ "/css/main.css " | prepend: site.baseurl }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />   
-   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a45f2a7a7b84566"></script>
+   <!-- Primary Inter font for modern UI -->
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Inter font for body and headings -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Fira Code for code blocks -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Kreon|Roboto+Slab|Bitter' rel='stylesheet' type='text/css'>
+    <!-- Removed older font imports; using Inter -->
     {% if page.keywords %}
     <meta name="keywords" content="{{ page.keywords }}" />
     {% else %}
