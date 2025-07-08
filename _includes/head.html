@@ -1,3 +1,30 @@
+    <!-- Smooth page transitions -->
+    <style>
+      body {
+        opacity: 0;
+        transition: opacity 0.4s cubic-bezier(0.4,0,0.2,1);
+      }
+      body.fade-in {
+        opacity: 1;
+      }
+    </style>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        document.body.classList.add('fade-in');
+        var anchors = document.querySelectorAll('a[href]:not([target="_blank"]):not([href^="#"]):not([href^="javascript:"])');
+        anchors.forEach(function(anchor) {
+          anchor.addEventListener('click', function(e) {
+            if (anchor.hostname === window.location.hostname && anchor.pathname !== window.location.pathname) {
+              e.preventDefault();
+              document.body.classList.remove('fade-in');
+              setTimeout(function() {
+                window.location = anchor.href;
+              }, 350);
+            }
+          });
+        });
+      });
+    </script>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
