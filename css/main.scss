@@ -82,6 +82,24 @@ header.header {
   background-color: var(--color-brand);
   padding: 1rem 0;
 }
+// Fixed header for post pages
+body.layout-post header.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.10);
+  padding: 2.2rem 0 1.2rem 0;
+}
+
+// Default header for other pages
+header.header {
+  background: #fff;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.10);
+  padding: 2.2rem 0 1.2rem 0;
+}
 header.header .site-title, header.header .site-title a {
   color: #fff;
   font-family: $code-font-family;
