@@ -8,8 +8,8 @@ description: ""
 # Your information
 #see _data\authors.yml
 excerpt_separator: <!--more-->
-google_analytics:  UA-101864870-1
-google_verify: GKeGILLEWvsJwRfdYMqqoMDZKOBZPWIWpHP9K2uIXHI
+google_analytics:  G-JJ9DPX6RS4
+##google_verify: GKeGILLEWvsJwRfdYMqqoMDZKOBZPWIWpHP9K2uIXHI
 production: true
 
 # Use GitHub Primer theme gem
