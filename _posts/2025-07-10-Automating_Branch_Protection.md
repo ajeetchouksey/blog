@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Automating Branch Protection in GitHub
+title: Branch Protection as Code Enforce GitHub Security at Scale
 description: "Best Practices for Automating Branch Protection in GitHub"
 modified: 2025-07-10
 tags: [GitHub, Automation, Branch Protection, DevOps, Security, Best Practices]
