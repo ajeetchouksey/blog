@@ -104,6 +104,10 @@ jobs:
 
 ## 🔁 Using Reusable Workflows for Branch Protection
 
+<p align="center">
+  <img src="/images/branch-protection-reusable-workflow-diagram.jpg" alt="Branch Protection Reusable Workflow Diagram" style="max-width: 600px; border: 1px solid #ccc; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+</p>
+
 A scalable way to enforce branch protection across many repositories is to use [reusable workflows](https://docs.github.com/en/actions/using-workflows/reusing-workflows) in GitHub Actions. This approach lets you define your branch protection logic once and call it from any repo, ensuring consistency and reducing maintenance.
 
 ### Step 1: Create a Central Reusable Workflow
