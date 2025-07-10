@@ -8,11 +8,8 @@ categories: [ GitHub ]
 author: Ajeet
 ---
 
-# Automating Branch Protection in GitHub
-
-> **Why automate branch protection?**
->
-> In today’s fast-paced DevOps world, manual branch protection is a recipe for drift, inconsistency, and risk. As teams and codebases scale, relying on the GitHub portal for configuration becomes unmanageable and error-prone. Automation ensures every repository—old or new—remains secure, compliant, and up-to-date, with zero manual effort.
+In today’s fast-paced DevOps world, manual branch protection is a recipe for drift, inconsistency, and risk. As teams and codebases scale, relying on the GitHub portal for configuration becomes unmanageable and error-prone. Automation ensures every repository—old or new—remains secure, compliant, and up-to-date, with zero manual effort.
+<!--more-->
 >
 > **Automated branch protection means:**
 > - No more “oops, forgot to set protection on that new repo.”
