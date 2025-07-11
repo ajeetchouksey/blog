@@ -105,7 +105,7 @@ jobs:
 ## 🔁 Using Reusable Workflows for Branch Protection
 
 
-![Branch Protection Reusable Workflow Diagram](/images/posts/branch-protection-reusable-workflow-diagram.jpg)
+<img src="/images/posts/branch-protection-reusable-workflow-diagram.jpg" alt="Branch Protection Reusable Workflow Diagram" style="max-width:400px; display:block; margin:auto; border-radius:8px; border:1px solid #eee; box-shadow:0 2px 8px rgba(0,0,0,0.08);" />
 
 If the image is not displaying, ensure:
 - The image file `branch-protection-reusable-workflow-diagram.jpg` exists in the `/images/` directory at the root of your site.
