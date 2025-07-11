@@ -107,13 +107,6 @@ jobs:
 
 <img src="/images/posts/branch-protection-reusable-workflow-diagram.jpg" alt="Branch Protection Reusable Workflow Diagram" style="max-width:400px; display:block; margin:auto; border-radius:8px; border:1px solid #eee; box-shadow:0 2px 8px rgba(0,0,0,0.08);" />
 
-If the image is not displaying, ensure:
-- The image file `branch-protection-reusable-workflow-diagram.jpg` exists in the `/images/` directory at the root of your site.
-- The path is correct relative to your site's base URL (for Jekyll, `/images/` is typical if the image is in the root-level `images` folder).
-- There are no typos in the file name or extension.
-
-If your images are inside the `_posts` directory or elsewhere, adjust the path accordingly (e.g., `../images/...` if needed based on your folder structure).
-
 
 A scalable way to enforce branch protection across many repositories is to use [reusable workflows](https://docs.github.com/en/actions/using-workflows/reusing-workflows) in GitHub Actions. This approach lets you define your branch protection logic once and call it from any repo, ensuring consistency and reducing maintenance.
 
