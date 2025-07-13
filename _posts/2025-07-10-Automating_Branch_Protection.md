@@ -8,6 +8,8 @@ categories: [ GitHub ]
 author: Ajeet
 ---
 
+**Target Audience:** Sales engineers, solution architects, and design decision-makers looking to secure their code repositories at scale.
+
 In today’s fast-paced DevOps world, manual branch protection is a recipe for drift, inconsistency, and risk. As teams and codebases scale, relying on the GitHub portal for configuration becomes unmanageable and error-prone. Automation ensures every repository—old or new—remains secure, compliant, and up-to-date, with zero manual effort.
 <!--more-->
 >
