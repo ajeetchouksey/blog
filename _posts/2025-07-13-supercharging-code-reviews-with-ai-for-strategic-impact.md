@@ -21,10 +21,7 @@ By integrating Azure OpenAI into your CI/CD pipeline, you can automate repetitiv
 In this post, we’ll explore **how a customized AI code reviewer delivers clear ROI for decision-makers**: reducing review cycle times, strengthening compliance posture, and providing actionable insights. You’ll learn how to seamlessly integrate the tool into your existing workflows and tailor it to your enterprise needs, ensuring both speed and governance go hand in hand.
 <!--more-->
 
-<img src="/images/posts/2025-07-13-aicrgcdt/architecture.jpeg" alt="Architecture Diagram" style="max-width:80%; height:auto; display:block; margin:0 auto;" />
-
-
-
+<img src="/images/posts/2025-07-13-aicrgcdt/businssview.jpeg" alt="Business View" style="max-width:80%; height:auto; display:block; margin:0 auto;" />
 
 ---
 
@@ -74,7 +71,7 @@ When choosing an AI-powered code review solution, organizations can select betwe
 ## 🔗 Seamless Workflow Integration for Enterprise Pipelines
 
 
-<img src="/images/posts/2025-07-13-aicrgcdt/workflow.jpeg" alt="Workflow Snapshot" style="max-width:80%; height:auto; display:block; margin:0 auto;" />
+<img src="/images/posts/2025-07-13-aicrgcdt/architecture.jpeg" alt="Workflow Snapshot" style="max-width:80%; height:auto; display:block; margin:0 auto;" />
 
 Implementing strategic AI code reviews is designed to be frictionless, aligning with your existing CI/CD processes and governance frameworks:
 
@@ -106,5 +103,4 @@ Dive into the detailed architecture and implementation code on GitHub:
 [![GitHub Repo](https://img.shields.io/badge/GitHub%20Repo-View%20Code-blue?logo=github)](https://github.com/ajeetchouksey/ajch_agenticdevops/tree/main/ai-agents/codequality_agent)
 
 **Image credit: ChatGPT.**
----
 
