@@ -7,6 +7,7 @@ tags: [ azure-openai, code-review, ai-integration, software-governance ]
 keywords: "azure-openai, code-review, ai-integration, software-governance, github-actions, devops, cloud-architecture, compliance, security, productivity"
 categories: [AI]
 author: Ajeet
+permalink: /2025/07/13/supercharging-code-reviews-with-ai-for-strategic-impact/
 ---
 
  [![GitHub Repo](https://img.shields.io/badge/GitHub%20Repo-View%20Code-blue?logo=github)](https://github.com/ajeetchouksey/ajch_agenticdevops/tree/main/ai-agents/codequality_agent)
@@ -99,9 +100,11 @@ Implementing strategic AI code reviews is designed to be frictionless, aligning 
 
 ---
 
-##  [![GitHub Repo](https://img.shields.io/badge/GitHub%20Repo-View%20Code-blue?logo=github)e into the detailed architecture and implementation code on GitHub:
+## 🔧 Technical Implementation
 
- [![GitHub Repo](https://img.shields.io/badge/GitHub%20Repo-View%20Code-blue?logo=github)](https://github.com/ajeetchouksey/ajch_agenticdevops/tree/main/ai-agents/codequality_agent)
+Dive into the detailed architecture and implementation code on GitHub:
+
+[![GitHub Repo](https://img.shields.io/badge/GitHub%20Repo-View%20Code-blue?logo=github)](https://github.com/ajeetchouksey/ajch_agenticdevops/tree/main/ai-agents/codequality_agent)
 
 ---
 
