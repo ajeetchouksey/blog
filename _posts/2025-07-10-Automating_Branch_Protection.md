@@ -3,7 +3,7 @@ layout: post
 title: Branch Protection as Code Enforce GitHub Security at Scale
 description: "Branch Protection as Code Enforce GitHub Security at Scale"
 modified: 2025-07-10
-tags: [GitHub, Automation, Branch Protection, DevOps, Security, Best Practices]
+tags: [GitHub, Automation, Branch Protection, DevOps, Security, Best Practices,software-governance]
 categories: [ GitHub ]
 author: Ajeet
 ---

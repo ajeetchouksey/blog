@@ -98,7 +98,7 @@ Implementing strategic AI code reviews is designed to be frictionless, aligning 
 
 ---
 
-> **AI-driven code reviews empower organizations to accelerate delivery, enforce governance, and drive measurable ROI by automating quality, security, and compliance checks at scale.**
+> **AI-driven code reviews empower organizations to accelerate delivery, enforce governance, and drive measurable ROI by automating quality, security, and compliance checks at scale. *
 
 ---
 
@@ -110,7 +110,7 @@ Dive into the detailed architecture and implementation code on GitHub:
 
 ---
 
-> AI-driven code reviews transform your development workflow by automating critical quality, security, and compliance checks—reducing review times by up to 60%, empowering teams to innovate faster, and ensuring governance at enterprise scale.
+
 
 **Image credit: ChatGPT.**
 
