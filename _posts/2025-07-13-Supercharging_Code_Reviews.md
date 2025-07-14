@@ -98,16 +98,13 @@ Implementing strategic AI code reviews is designed to be frictionless, aligning 
 
 ---
 
-## 🔧 Technical Implementation
-
-Dive into the detailed architecture and implementation code on GitHub:
+##  [![GitHub Repo](https://img.shields.io/badge/GitHub%20Repo-View%20Code-blue?logo=github)e into the detailed architecture and implementation code on GitHub:
 
  [![GitHub Repo](https://img.shields.io/badge/GitHub%20Repo-View%20Code-blue?logo=github)](https://github.com/ajeetchouksey/ajch_agenticdevops/tree/main/ai-agents/codequality_agent)
 
 ---
 
-## 🔍 Post Summary
-AI-driven code reviews transform your development workflow by automating critical quality, security, and compliance checks—reducing review times by up to 60%, empowering teams to innovate faster, and ensuring governance at enterprise scale.
+> AI-driven code reviews transform your development workflow by automating critical quality, security, and compliance checks—reducing review times by up to 60%, empowering teams to innovate faster, and ensuring governance at enterprise scale.
 
 **image credit: ChatGPT**
 
