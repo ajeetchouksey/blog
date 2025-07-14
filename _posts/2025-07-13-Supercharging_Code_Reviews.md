@@ -8,6 +8,8 @@ keywords: "azure-openai, code-review, ai-integration, software-governance, githu
 categories: [AI]
 author: Ajeet
 permalink: /2025/07/13/supercharging-code-reviews-with-ai-for-strategic-impact/
+redirect_from:
+  - "/2025/07/13/Supercharging_Code_Reviews/"
 ---
 
  [![GitHub Repo](https://img.shields.io/badge/GitHub%20Repo-View%20Code-blue?logo=github)](https://github.com/ajeetchouksey/ajch_agenticdevops/tree/main/ai-agents/codequality_agent)
