@@ -1,0 +1,41 @@
+# Site settings
+title: AI-Driven Cloud & DevOps
+url: "https://theaiops.blog"
+baseurl: "" # cleared for custom domain root deployment
+timezone: Europe/London
+description: ""
+
+# Your information
+#see _data\authors.yml
+excerpt_separator: <!--more-->
+google_analytics:  G-JJ9DPX6RS4
+##google_verify: GKeGILLEWvsJwRfdYMqqoMDZKOBZPWIWpHP9K2uIXHI
+production: true
+
+# Use GitHub Primer theme gem - COMMENTED OUT FOR TESTING
+# theme: jekyll-theme-primer
+
+# Plugins used by the site
+plugins:
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-redirect-from
+
+# Comment Service (Disqus or 多说)
+#  choose one and un-comment the line to active it
+disqus_shortname: azure365   # get one: https://disqus.com/admin/signup/
+#duoshuo_shortname: xxx  # get one: http://duoshuo.com/create-site/
+
+# Permalink and markdown settings
+permalink: /:year/:month/:day/:title/
+
+  
+# Build settings
+paginate: 10
+paginate_path: "page:num"
+
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge

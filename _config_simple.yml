@@ -1,0 +1,18 @@
+# Minimal Jekyll config for testing
+title: AI-Driven Cloud & DevOps
+url: "https://theaiops.blog"
+baseurl: ""
+description: "Exploring the intersection of artificial intelligence, cloud computing, and modern DevOps practices"
+
+plugins:
+  - jekyll-paginate
+
+# Build settings
+paginate: 5
+paginate_path: "page:num"
+
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
