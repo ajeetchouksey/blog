@@ -12,8 +12,9 @@ google_analytics:  G-JJ9DPX6RS4
 ##google_verify: GKeGILLEWvsJwRfdYMqqoMDZKOBZPWIWpHP9K2uIXHI
 production: true
 
-# Use GitHub Primer theme gem
-theme: jekyll-theme-primer
+# Use GitHub Primer theme gem - COMMENTED OUT FOR TESTING
+# theme: jekyll-theme-primer
+
 # Plugins used by the site
 plugins:
   - jekyll-paginate

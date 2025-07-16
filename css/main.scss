@@ -120,6 +120,24 @@ header.header .site-nav a:hover {
   display: none;
 }
 
+/* Override: Show banner on home page */
+.home .header .header-banner {
+  display: none !important; /* Keep hidden to use our custom hero */
+}
+
+/* Custom hero banner integration */
+.home {
+  .page-content {
+    padding: 0; /* Remove top padding for hero */
+  }
+  
+  .page-content .wrapper {
+    background: transparent; /* Make background transparent for hero */
+    box-shadow: none; /* Remove shadow for hero section */
+    outline: none; /* Remove outline for hero section */
+  }
+}
+
 /* Header wrapper bar styling */
 header.header > .wrapper {
   background-color: var(--color-brand) !important;
