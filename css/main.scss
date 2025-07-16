@@ -173,6 +173,7 @@ header.header .site-nav a:hover {
   align-items: center;
   justify-content: flex-start;
   padding: 3px;
+  outline: none;
   
   &:hover {
     opacity: 0.8;
@@ -183,15 +184,16 @@ header.header .site-nav a:hover {
     height: 20px;
     background: var(--header-fg);
     border-radius: 50%;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 10px;
+    color: var(--header-bg);
   }
   
   &.dark .toggle-indicator {
-    transform: translateX(30px);
+    transform: translateX(28px);
   }
 }
 
