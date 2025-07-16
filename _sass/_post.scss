@@ -21,20 +21,24 @@ root {
           margin-bottom: 0.625rem;
           padding: 1.25rem;
           .post-title {
-              font-size: 1.5rem;
-              font-weight: 400;
-              font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+              // Use typography scale instead of fixed sizes
+              font-size: var(--font-size-xxl);
+              font-weight: 600;
+              font-family: $base-font-family; // Use consistent font family
               color: var(--primary-color);
               margin: 0 -5rem;
+              line-height: var(--line-height-tight);
+              letter-spacing: var(--letter-spacing-tight);
               @include media-query($on-palm) {
-                  font-size: 2.125rem;
+                  font-size: var(--font-size-xl);
               }
           }
           .post-meta {
               color: var(--text-color-light);
-              font-size: $base-font-size;
+              font-size: var(--font-size-xs);
               margin: 0 -5rem;
-              line-height: 1.6;
+              line-height: var(--line-height-normal);
+              letter-spacing: var(--letter-spacing-wide);
           }
           @include media-query($on-palm) {
               text-align: center;

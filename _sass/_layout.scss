@@ -34,12 +34,14 @@
 	}
 	
 	.site-title {
-		font-family: 'Candara','Roboto Slab', serif;
+		font-family: $base-font-family; // Use consistent font family
 		float: left;
 		color: $header-fg;
 		text-decoration: none;
-		font-size: 34px;
-		line-height: $base-font-size * 2;
+		font-size: var(--font-size-xl);
+		line-height: var(--line-height-snug);
+		font-weight: 600;
+		letter-spacing: var(--letter-spacing-normal);
 	}
 	.site-nav {
 		text-align:right;
@@ -49,6 +51,9 @@
 			color: $header-link;
 			padding: 10px 20px;
 			white-space: nowrap;
+			font-size: var(--font-size-sm);
+			font-weight: 500;
+			letter-spacing: var(--letter-spacing-wide);
 		
 			&:hover, &:focus {
 				background: $header-bg-hover;
