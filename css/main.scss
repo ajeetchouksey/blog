@@ -53,7 +53,7 @@ $github-color-dark-bg:      #0d1117; // GitHub dark mode background
 
 /* CSS custom properties */
 :root {
-  --color-background: #{$default-color-background};
+  --color-background: #{$color-background};
   --color-text: #{$default-color-text};
   --color-link: #{$default-color-link};
   --color-muted: #{$github-color-muted};
