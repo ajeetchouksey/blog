@@ -58,7 +58,7 @@
   .post-list {
     padding: 1rem;
     list-style: none;
-    @media (min-width: #{map-get($breakpoints, mobile)}) {
+    @media (min-width: var(--breakpoint-mobile)) {
       padding: 2rem;
     }
     > li {
