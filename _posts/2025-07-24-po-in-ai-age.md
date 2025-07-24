@@ -9,7 +9,7 @@ categories: [Product Management]
 author: Ajeet
 ---
 
-I've been thinking about this a lot lately. As someone who's worn both the Technology Architect hat and stepped into Product Owner shoes for several technical product deliveries, I've watched this transformation happen in real-time—and honestly, it's been fascinating and terrifying in equal measure.
+I've been thinking about this a lot lately. As someone who's worn both the Technology Architect hat and stepped into Product Owner shoes for few technical product deliveries, I've watched this transformation happen in real-time—and honestly, it's been fascinating and terrifying in equal measure.
 
 The landscape of product ownership has shifted dramatically over the past few years, and if you're not feeling at least a little overwhelmed by the pace of change, you might not be paying attention. 
 
