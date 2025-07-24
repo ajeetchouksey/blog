@@ -27,9 +27,11 @@ layout: default
      
      <!--<div class="addthis_inline_share_toolbox"></div>-->
      <div class="addthis_inline_share_toolbox"></div>
-    {% comment %} Prefix image src paths with baseurl {% endcomment %}
-    {% assign img_prefix = 'src="' | append: site.baseurl | append: '/images' %}
-    {{ content | replace: 'src="/images', img_prefix }}
+    {% comment %} Dynamically prefix image src paths with baseurl {% endcomment %}
+    {% capture updated_content %}
+      {{ content | replace: 'src="/images', 'src="' | append: site.baseurl | append: '/images' }}
+    {% endcapture %}
+    {{ updated_content | replace: 'src="/', 'src="' | append: site.baseurl | append: '/' }}
     <p></p>
      
     <!--<div class="addthis_inline_follow_toolbox"></div>-->
