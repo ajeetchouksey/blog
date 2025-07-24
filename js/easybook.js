@@ -198,7 +198,7 @@
                 ulStack[ulStack.length - 1].appendChild(newUl);
                 ulStack.push(newUl);
             } else if (level < previousLevel) {
-                ulStack.splice(level - previousLevel);
+                ulStack.splice(level, ulStack.length - level);
             }
             ulStack[ulStack.length - 1].appendChild(li);
             previousLevel = level;
