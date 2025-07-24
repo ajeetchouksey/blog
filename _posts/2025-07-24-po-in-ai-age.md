@@ -13,7 +13,8 @@ I've been thinking about this a lot lately. As someone who's worn both the Techn
 
 The landscape of product ownership has shifted dramatically over the past few years, and if you're not feeling at least a little overwhelmed by the pace of change, you might not be paying attention. 
 
-**This is my honest take: the future belongs to Product Owners who understand that AI isn't just another feature request—it's a fundamental shift in how we build products.**
+> **This is my honest take: the future belongs to Product Owners who understand that AI isn't just another feature request—it's a fundamental shift in how we build products.**
+
 <div align="center">
 
 <img src="/images/posts/po.jpeg" alt="Product Owner in AI Age" width="600" height="400">
