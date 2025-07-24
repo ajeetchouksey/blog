@@ -43,25 +43,25 @@ $header-fg: #ffffff;
         "easybook",
         "home"
 ;
-/* GitHub-inspired color theme */
-$color-brand:        #24292e; // GitHub dark
-$color-link:         #0969da; // GitHub link blue
-$color-background:   #ffffff; // GitHub light canvas
-$color-text:         #24292e; // GitHub text
-$color-muted:        #57606a; // GitHub muted gray
-$color-dark-bg:      #0d1117; // GitHub dark mode background
+// GitHub-inspired Color Scheme
+$github-color-brand:        #24292e; // GitHub dark
+$github-color-link:         #0969da; // GitHub link blue
+$github-color-background:   #ffffff; // GitHub light canvas
+$github-color-text:         #24292e; // GitHub text
+$github-color-muted:        #57606a; // GitHub muted gray
+$github-color-dark-bg:      #0d1117; // GitHub dark mode background
 
 /* CSS custom properties */
 :root {
-  --color-background: #{$color-background};
-  --color-text: #{$color-text};
-  --color-link: #{$color-link};
-  --color-muted: #{$color-muted};
-  --color-brand: #{$color-brand};
+  --color-background: #{$default-color-background};
+  --color-text: #{$default-color-text};
+  --color-link: #{$default-color-link};
+  --color-muted: #{$github-color-muted};
+  --color-brand: #{$github-color-brand};
 }
 [data-color-mode="dark"] {
-  --color-background: #{$color-dark-bg};
-  --color-text: #{$color-text};
+  --color-background: #{$github-color-dark-bg};
+  --color-text: #{$github-color-text};
   --color-link: #58A6FF;
 }
 
