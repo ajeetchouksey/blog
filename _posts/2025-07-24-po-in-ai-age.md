@@ -13,7 +13,7 @@ I've been thinking about this a lot lately. As someone who's worn both the Techn
 
 The landscape of product ownership has shifted dramatically over the past few years, and if you're not feeling at least a little overwhelmed by the pace of change, you might not be paying attention. 
 
-![Product Owner in AI Age](/images/posts/PO.jpeg)
+<img src="/images/posts/po.jpeg" alt="Product Owner in AI Age" width="400"/>
 
 > **This is my honest take: the future belongs to Product Owners who understand that AI isn't just another feature request—it's a fundamental shift in how we build products.**
 
@@ -21,13 +21,11 @@ The landscape of product ownership has shifted dramatically over the past few ye
 
 <!--more-->
 
-As someone who's worn both the Technology Architect hat and stepped into Product Owner shoes for several technical product deliveries, I thought my technical background would prepare me for everything. I was wrong.
+As someone who's worn both the Technology Architect hat and stepped into Product Owner shoes for couple of technical product deliveries, I thought my technical background would prepare me for everything. I was wrong.
 
 
 
 The traditional Product Owner playbook—managing backlogs, writing user stories, stakeholder communication—that's all still there. But layered on top is an entirely new dimension: stewarding intelligent systems that learn, adapt, and sometimes surprise Product Owners with their decisions. Product Owners are no longer just shipping features; they're shipping systems that evolve after deployment.
-
-What caught me off guard wasn't the technical complexity—it was the sheer breadth of new responsibilities that extended far beyond my technical comfort zone. One day I'm reviewing data quality metrics, the next I'm explaining to executives why our AI model's confidence dropped after the latest update, and by Friday I'm in an ethics review discussing whether our recommendation algorithm might be reinforcing user biases.
 
 The role has become part traditional product management, part data stewardship, part ethics advocate, and part technology translator. It's exhausting and exhilarating in equal measure.
 
