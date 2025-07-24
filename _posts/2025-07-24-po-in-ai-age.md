@@ -17,7 +17,7 @@ The landscape of product ownership has shifted dramatically over the past few ye
 
 <div align="center">
 
-<img src="/images/posts/po.jpeg" alt="Product Owner in AI Age" >
+<img src="{{ site.baseurl }}/images/posts/po.jpeg" alt="Product Owner in AI Age" >
 
 </div>
 
