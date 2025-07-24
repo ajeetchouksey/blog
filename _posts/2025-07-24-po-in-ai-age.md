@@ -20,7 +20,6 @@ The landscape of product ownership has shifted dramatically over the past few ye
 
 </div>
 
-
 <!--more-->
 
 As someone who's worn both the Technology Architect hat and stepped into Product Owner shoes for several technical product deliveries, I thought my technical background would prepare me for everything. I was wrong.
