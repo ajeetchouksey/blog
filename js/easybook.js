@@ -168,21 +168,45 @@
     
         window.addEventListener('scroll', highlightActiveSection);
     
-        // Assuming the rest of the function builds the TOC and binds click events for smooth scrolling
-        toc.querySelectorAll("a").forEach(link => {
+        // Build the TOC dynamically
+        const headings = content.querySelectorAll("h1, h2, h3, h4, h5, h6");
+        const ulStack = [make("ul")];
+        let previousLevel = 1;
+
+        headings.forEach(heading => {
+            const level = parseInt(heading.tagName.substring(1), 10);
+            const li = make("li");
+            const link = make("a");
+
+            // Set up the link
+            let id = heading.id;
+            if (!id) {
+                id = `generated-toc-${cnt++}`;
+                heading.id = id;
+            }
+            link.textContent = heading.textContent;
+            link.href = `#${id}`;
             link.addEventListener("click", (e) => {
                 e.preventDefault();
-                const targetId = link.getAttribute("href").substring(1);
-                const target = document.getElementById(targetId);
-                if (target) {
-                    smoothScroll(target);
-                } else {
-                    console.error("Target section not found: ", targetId);
-                }
+                smoothScroll(heading);
             });
+            li.appendChild(link);
+
+            // Adjust the list hierarchy
+            if (level > previousLevel) {
+                const newUl = make("ul");
+                ulStack[ulStack.length - 1].appendChild(newUl);
+                ulStack.push(newUl);
+            } else if (level < previousLevel) {
+                ulStack.splice(level - previousLevel);
+            }
+            ulStack[ulStack.length - 1].appendChild(li);
+            previousLevel = level;
         });
-    
-        // Your existing code to build the TOC goes here
+
+        // Append the generated TOC to the container
+        toc.appendChild(ulStack[0]);
+        toc.style.display = "block";
     
         return true; // Indicate successful initialization
     }
