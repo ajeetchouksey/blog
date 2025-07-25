@@ -1,8 +1,7 @@
 body {
 	margin: 0;
 	font-family: $base-font-family;
-	font-size: $base-font-size;
-	line-height: $base-line-height;
+	// Font size, line-height, and letter-spacing now defined in _typography.scss
 }
 a {
 	text-decoration: none;
@@ -86,8 +85,9 @@ table.noborder-table{
 	}	
 }
 
+// Heading styles - detailed typography rules now in _typography.scss
 h1,h2,h3,h4,h5,h6{
-	font-weight: normal;
+	font-weight: normal; // Will be overridden by _typography.scss
 }
 
 .about{

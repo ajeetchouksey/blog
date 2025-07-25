@@ -3,7 +3,7 @@
 @charset "utf-8";
 
 $base-font-family:  'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-$base-font-size:   14px;
+$base-font-size:   16px; // Improved from 14px for better readability
 $small-font-size:  12px;
 $base-line-height: 1.5;
 
@@ -32,11 +32,12 @@ $header-link: #ffffff;
 // Header foreground (title) color
 $header-fg: #ffffff;
 
-// Include mixins
+// Include mixins first
 @import "mixins";
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "typography", // New typography scale
         "base",
         "layout",
         "syntax-highlighting",
@@ -72,9 +73,10 @@ body {
 }
 
 // Typography
+// Main typography styles are now in _typography.scss
 h1, h2, h3, h4, h5, h6 {
-  font-family: $code-font-family;
   color: var(--color-text);
+  // Font family, sizes, and other properties defined in _typography.scss
 }
 
 // Header and Navigation
