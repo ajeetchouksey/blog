@@ -24,6 +24,11 @@ I was basically using a Ferrari to drive to my mailbox.
 **What you'll discover:** The exact decision-making framework I use to pick the right AI model for each task. No more overpaying for overkill solutions.
 
 Ready to turn your AI chaos into a cost-effective, productivity-boosting machine?
+
+<p align="center">
+    <img src="{{ '/images/posts/copilot_agent_dt.jpeg' | relative_url }}" alt="AI Model Optimization Framework" width="350" height="350" style="object-fit: cover; border-radius: 8px;">
+</p>
+
 <!--more-->
 
 At first, I tried to optimize by combining multiple requests into single prompts. While that helped a bit, it wasn't enough. I realized I needed a more strategic approach.
@@ -40,9 +45,6 @@ As a tech enthusiast, I’ve always been fascinated by how AI can supercharge de
 
 So began my journey into understanding **when to use which model**, and how to **combine them with the right agents** to strike the perfect balance between **performance and cost**.
 
-<p align="center">
-    <img src="{{ '/images/posts/copilot_agent_dt.jpeg' | relative_url }}" alt="AI Model Optimization Framework" width="350" height="350" style="object-fit: cover; border-radius: 8px;">
-</p>
 
 ---
 
