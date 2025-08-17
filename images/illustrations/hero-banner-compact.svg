@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="180" viewBox="0 0 900 180">
+  <rect width="900" height="180" rx="10" fill="#071e3d"/>
+  <g transform="translate(28,28)" fill="#fff" font-family="Segoe UI, Roboto, Arial">
+    <text x="0" y="28" font-size="22" font-weight="700">AI that feels helpful, not annoying</text>
+    <text x="0" y="54" font-size="13" opacity="0.85">Personalized discovery, quick visual checks, and reliable fulfillment — made human.</text>
+  </g>
+  <g transform="translate(660,20)">
+    <rect x="0" y="0" width="180" height="120" rx="12" fill="#fff" opacity="0.06"/>
+    <circle cx="90" cy="50" r="30" fill="#fff"/>
+  </g>
+</svg>

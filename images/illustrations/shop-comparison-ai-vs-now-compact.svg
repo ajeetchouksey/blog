@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <style>
+    .bg { fill: #ffffff; }
+    .card { fill: #f8fafc; stroke: #e6e9ee; stroke-width: 1; rx: 12; }
+    .label { font: 600 14px 'Segoe UI', Roboto, sans-serif; fill: #0f172a; }
+    .muted { font: 400 12px 'Segoe UI', Roboto, sans-serif; fill: #6b7280; }
+    .chip-ai { fill: #ecfdf5; stroke: #bbf7d0; rx: 8; }
+    .accent { fill: #60a5fa; }
+  </style>
+
+  <rect width="640" height="360" class="bg" />
+
+  <text x="20" y="28" class="label">Now</text>
+  <rect x="16" y="36" width="296" height="240" class="card" />
+  <text x="36" y="62" class="muted">Manual search, generic picks, slow delivery</text>
+
+  <text x="328" y="28" class="label">Future (AI)</text>
+  <rect x="324" y="36" width="296" height="240" class="card" />
+  <text x="344" y="62" class="muted">Personalized, AR previews, chat assistant, faster delivery</text>
+
+  <!-- simple icons inside cards -->
+  <g transform="translate(36,96)">
+    <rect width="88" height="56" fill="#fff" stroke="#e6e9ee" rx="6" />
+    <text x="100" y="28" class="muted">Product list (static)</text>
+  </g>
+  <g transform="translate(344,96)">
+    <rect width="88" height="56" fill="#f0fff4" stroke="#d1fae5" rx="6" />
+    <text x="100" y="28" class="muted">Personalized picks</text>
+  </g>
+
+  <g transform="translate(36,168)">
+    <rect width="88" height="56" fill="#fff" stroke="#e6e9ee" rx="6" />
+    <text x="100" y="28" class="muted">No AR/visual try</text>
+  </g>
+  <g transform="translate(344,168)">
+    <rect width="88" height="56" fill="#fff7ed" stroke="#ffedd5" rx="6" />
+    <text x="100" y="28" class="muted">AR preview & 3D try-on</text>
+  </g>
+
+  <text x="20" y="312" class="muted">Compare: left = friction; right = speed and clarity.</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#0ea5e9"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="320" rx="12" fill="url(#g)"/>
+  <g transform="translate(60,40)" fill="#fff" font-family="Segoe UI, Roboto, Arial" >
+    <text x="0" y="40" font-size="28" font-weight="700">The future of customer-facing websites</text>
+    <text x="0" y="76" font-size="16" opacity="0.9">Personalization, visual tools and reliable operations — made simple for your users.</text>
+  </g>
+  <g transform="translate(860,40)">
+    <rect x="0" y="0" width="220" height="220" rx="30" fill="#fff" opacity="0.08"/>
+    <circle cx="110" cy="70" r="40" fill="#fff"/>
+    <rect x="70" y="130" width="80" height="34" rx="8" fill="#fff" opacity="0.12"/>
+    <path d="M36 180 L184 180" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity="0.2"/>
+  </g>
+</svg>
