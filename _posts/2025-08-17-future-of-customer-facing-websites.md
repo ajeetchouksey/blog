@@ -4,11 +4,11 @@ Imagine a world where shopping online feels as personal and intuitive as having 
 
 ## A Day in the Life of an AI-Powered Shopper
 
-Meet Sarah, a busy professional who juggles work and family. One morning, while sipping her coffee, she opens her favorite shopping app. The app’s AI, named "Ava," greets her by name, showcasing a personalized homepage tailored to her preferences. 
+Imagine you, a busy professional who juggles work and family. One morning, while sipping your coffee, you open your favorite shopping app. The app’s AI, named "Ava," greets you by name and showcases a personalized homepage tailored to your preferences.
 
 ### Personalized Experiences
 
-As Sarah scrolls, she notices that Ava has curated a selection of products based on her past purchases, seasonal trends, and even her social media activity. The AI suggests a new ergonomic chair that aligns perfectly with her recent interest in home office decor. 
+As you scroll, you notice that Ava has curated a selection of products based on your past purchases, seasonal trends, and even your social media activity. The AI suggests a new ergonomic chair that aligns perfectly with your recent interest in home office decor.
 
 ### Engaging Scenarios
 
