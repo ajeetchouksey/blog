@@ -3,32 +3,50 @@ layout: default
 ---
 
 <div class="home">
-  <ul class="post-list">
+  <div class="post-cards-grid">
     {% for post in paginator.posts %}
-      <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
-          {% assign user = site.data.authors | where: "author", post.author %}
-        </p>
-        
-        <p class="post-meta">
-          {% for tag in post.tags %}
-      <a class="tag" href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">{{ tag }}</a>
-      {% endfor %}
-        </p>
-        <!--<div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>-->
-
-        <div class="post-excerpt">
-          {{ post.excerpt }}
-          <p>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Read More &raquo;</a>
-          </p>
+      <article class="post-card">
+        <div class="post-card-image">
+          {% assign first_image = post.content | split: '<img src="' | first %}
+          {% if post.content contains '<img src="' %}
+            {% assign image_url = post.content | split: '<img src="' | last | split: '"' | first %}
+            <img src="{{ image_url }}" alt="{{ post.title }}" class="card-thumbnail">
+          {% else %}
+            <div class="card-placeholder">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17l2.5-3.21L14 17H9zm6.5-4l2.5 3h-5l2.5-3zM19 13l-2-2-2 2h4z"/>
+              </svg>
+            </div>
+          {% endif %}
         </div>
-      </li>
+        
+        <div class="post-card-content">
+          <h2 class="post-card-title">
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+          
+          <div class="post-card-meta">
+            <time class="post-date">{{ post.date | date: "%b %-d, %Y" }}</time>
+            {% assign user = site.data.authors | where: "author", post.author %}
+          </div>
+          
+          <div class="post-card-tags">
+            {% for tag in post.tags limit:3 %}
+              <a class="tag" href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">{{ tag }}</a>
+            {% endfor %}
+          </div>
+
+          <div class="post-card-excerpt">
+            {{ post.excerpt | strip_html | truncate: 150 }}
+          </div>
+          
+          <div class="post-card-footer">
+            <a class="read-more-btn" href="{{ post.url | prepend: site.baseurl }}">Read More</a>
+          </div>
+        </div>
+      </article>
     {% endfor %}
-  </ul>
+  </div>
   
   <!-- Pagination links -->
 <div class="pagination">
