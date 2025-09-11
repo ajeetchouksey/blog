@@ -1,8 +1,64 @@
 ---
 layout: default
+header_image: false
 ---
 
 <div class="home">
+  <!-- Hero Banner Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>AI-Driven Cloud & DevOps</h1>
+      <p>Exploring the intersection of artificial intelligence, cloud computing, and modern DevOps practices</p>
+      <div class="hero-cta">
+        <a href="#latest-posts" class="btn-hero">Explore Latest Insights</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="latest-posts" class="posts-section">
+    <h2 class="section-title">Latest Posts</h2>
+    <ul class="post-list">
+      {% for post in paginator.posts %}
+        <li>
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+          <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
+            {% assign user = site.data.authors | where: "author", post.author %}
+          </p>
+          
+          <p class="post-meta">
+            {% for tag in post.tags %}
+        <a class="tag" href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">{{ tag }}</a>
+        {% endfor %}
+          </p>
+          <!--<div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>-->
+
+          <div class="post-excerpt">
+            {{ post.excerpt }}
+            <p>
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Read More &raquo;</a>
+            </p>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+    
+    <!-- Pagination links -->
+    <div class="pagination">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">PREV</a>
+      {% else %}
+        <span class="previous">PREV</span>
+      {% endif %}
+      <span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">NEXT</a>
+      {% else %}
+        <span class="next ">NEXT</span>
+      {% endif %}
+    </div>
+  </div>
   <ul class="post-list">
     {% for post in paginator.posts %}
       <li>
@@ -28,21 +84,6 @@ layout: default
         </div>
       </li>
     {% endfor %}
-  </ul>
-  
-  <!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">PREV</a>
-  {% else %}
-    <span class="previous">PREV</span>
-  {% endif %}
-  <span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">NEXT</a>
-  {% else %}
-    <span class="next ">NEXT</span>
-  {% endif %}
-</div>
+  </div>
 
 </div>
