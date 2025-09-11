@@ -58,29 +58,68 @@ $color-dark-bg:      #0d1117; // GitHub dark mode background
   --color-link: #{$color-link};
   --color-muted: #{$color-muted};
   --color-brand: #{$color-brand};
+  --color-dark-bg: #{$color-dark-bg};
+  --header-bg: #{$header-bg};
+  --header-fg: #{$header-fg};
+  --code-bg: #f6f8fa;
+  --code-text: #333;
+  --blockquote-bg: #E8E8FF;
+  --blockquote-border: #4E7AB5;
+  --border-color: #e1e4e8;
+  --post-meta-color: #586069;
+  
+  /* Smooth transitions for all color variables */
+  transition: 
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
 }
+
 [data-color-mode="dark"] {
   --color-background: #{$color-dark-bg};
-  --color-text: #{$color-text};
+  --color-text: #c9d1d9;
   --color-link: #58A6FF;
+  --color-muted: #8b949e;
+  --color-brand: #21262d;
+  --header-bg: #21262d;
+  --header-fg: #f0f6fc;
+  --code-bg: #161b22;
+  --code-text: #e6edf3;
+  --blockquote-bg: #161b22;
+  --blockquote-border: #30363d;
+  --border-color: #30363d;
+  --post-meta-color: #8b949e;
 }
 
 body {
   background-color: var(--color-background);
   color: var(--color-text);
   font-family: $base-font-family;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 // Typography
 h1, h2, h3, h4, h5, h6 {
   font-family: $code-font-family;
   color: var(--color-text);
+  transition: color 0.3s ease;
+}
+
+// Links with smooth transitions  
+a {
+  color: var(--color-link);
+  transition: color 0.3s ease;
+  &:hover { 
+    color: var(--color-link);
+    opacity: 0.8;
+  }
 }
 
 // Header and Navigation
 header.header {
-  background-color: var(--color-brand);
+  background-color: var(--header-bg);
   padding: 1rem 0;
+  transition: background-color 0.3s ease;
 }
 // Fixed header for post pages
 body.layout-post header.header {
@@ -89,30 +128,73 @@ body.layout-post header.header {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: linear-gradient(90deg, #23255d 0%, #3b3f8f 100%);
+  background: var(--header-bg);
   box-shadow: 0 4px 24px 0 rgba(35,37,93,0.12), 0 1.5px 0 0 rgba(255,255,255,0.12) inset;
   border-bottom: 1.5px solid rgba(255,255,255,0.18);
   padding: 2.2rem 0 1.2rem 0;
   backdrop-filter: blur(2px);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 // Default header for other pages
 header.header {
-  background: #fff;
+  background: var(--header-bg);
   box-shadow: 0 2px 16px 0 rgba(0,0,0,0.10);
   padding: 2.2rem 0 1.2rem 0;
+  transition: background-color 0.3s ease;
 }
 header.header .site-title, header.header .site-title a {
-  color: #fff;
+  color: var(--header-fg);
   font-family: $code-font-family;
+  transition: color 0.3s ease;
 }
 header.header .site-nav a {
-  color: #fff;
+  color: var(--header-fg);
   margin-left: 1rem;
   font-family: $code-font-family;
+  transition: color 0.3s ease;
 }
 header.header .site-nav a:hover {
-  color: var(--color-link-hover);
+  opacity: 0.8;
+}
+
+// Dark mode toggle button
+.dark-mode-toggle {
+  background: none;
+  border: 2px solid var(--header-fg);
+  border-radius: 50px;
+  width: 60px;
+  height: 30px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  margin-left: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 3px;
+  outline: none;
+  
+  &:hover {
+    opacity: 0.8;
+  }
+  
+  .toggle-indicator {
+    width: 20px;
+    height: 20px;
+    background: var(--header-fg);
+    border-radius: 50%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: var(--header-bg);
+  }
+  
+  &.dark .toggle-indicator {
+    transform: translateX(28px);
+  }
 }
 
 /* Hide banner, use single bar header */
@@ -179,16 +261,18 @@ header.header .site-nav a {
 // Footer styling
 footer {
   background-color: var(--color-muted);
-  color: #fff;
+  color: var(--header-fg);
   padding: 1rem 0;
   text-align: center;
   font-family: $code-font-family;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 footer a {
-  color: #fff;
+  color: var(--header-fg);
+  transition: color 0.3s ease;
 }
 footer a:hover {
-  color: var(--color-link-hover);
+  opacity: 0.8;
 }
 
 a {
@@ -216,14 +300,49 @@ pre {
 
 /* Content area styling */
 .page-content {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 .page-content a {
-  color: #000000;
+  color: var(--color-link);
+  transition: color 0.3s ease;
 }
 .post-content, .post-excerpt {
-  color: #000000;
+  color: var(--color-text);
+  transition: color 0.3s ease;
+}
+
+// Post meta styling
+.post-meta {
+  color: var(--post-meta-color);
+  transition: color 0.3s ease;
+}
+
+// Code blocks and pre elements
+pre {
+  background: var(--code-bg);
+  color: var(--code-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+code {
+  background-color: var(--code-bg);
+  color: var(--code-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+// Blockquotes
+blockquote {
+  background: var(--blockquote-bg);
+  border-left-color: var(--blockquote-border);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+// Borders and dividers
+hr, .post-header {
+  border-color: var(--border-color);
+  transition: border-color 0.3s ease;
 }
 /* Ensure navigation wrapper uses dark background */
 header.header > .wrapper {
